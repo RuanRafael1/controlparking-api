@@ -1,24 +1,13 @@
-# README
+Instruções para executar os testes:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Executar comando na pasta do projeto: rails db:environment:set RAILS_ENV=test
 
-Things you may want to cover:
+- Para rodar os testes: rails test
 
-* Ruby version
+Teste Rspec
 
-* System dependencies
+- Ir no arquivo "nome_do_projeto >> spec >> spec_helper.rb" e mudar a variavel "base_uri" para o host respectivo que está rodando a aplicação
 
-* Configuration
+- Subir aplicação antes de efetuar o teste Rspec
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Para rodar o teste executar comando(na pasta do projeto) : bundle exec rspec
